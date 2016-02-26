@@ -1,7 +1,11 @@
 from CardClass import Card_Class
 class Player_Class(object):
-
+    
     cardStack = Card_Class()
+    for x in cardStack.PrintAll():
+        print(x)
+
+    
     def __init__(self, name):
         self.Name = name
         self.Cards = []
